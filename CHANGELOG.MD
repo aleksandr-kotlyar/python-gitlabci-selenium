@@ -1,3 +1,7 @@
+# Changelog
 
-#### version 0.1.0 (08-03-2020)
-Created simple gitlab-ci with remote standalone-chrome and one test for it.
+## 0.1.1
+ - fixed: throw chrome Options() to Remote webdriver
+
+## 0.1.0
+ - created simple gitlab-ci testing project with selenium, remote standalone-chrome and one selenium test in ci job.
