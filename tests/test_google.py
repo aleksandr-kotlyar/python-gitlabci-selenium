@@ -21,7 +21,7 @@
 # SOFTWARE.
 
 
-def test_query_window_is_visible(browser):
-    browser.get('https://google.com')
-    query_window = browser.find_element_by_name('q')
+def test_query_window_is_visible(remote_browser):
+    remote_browser.get('https://google.com')
+    query_window = remote_browser.find_element_by_name('q')
     assert query_window.is_displayed()
