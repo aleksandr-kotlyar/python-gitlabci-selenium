@@ -24,13 +24,27 @@ image: python:3.7.6-alpine
 stages:
   - test
 
+variables:
+  BROWSER: chrome
+
 .job_template:
   before_script:
     - pip3 install -r requirements.txt
   script:
-    - pytest
+    - pytest --browser=$BROWSER
 
 e2e:remote:chrome:
   extends: .job_template
   services:
     - selenium/standalone-chrome
+  only:
+    variables:
+      - $BROWSER == 'chrome'
+
+e2e:remote:firefox:
+  extends: .job_template
+  services:
+    - selenium/standalone-firefox
+  only:
+    variables:
+      - $BROWSER == 'firefox'

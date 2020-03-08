@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.0.0
+ - Added LICENSE for using.
+ - Added Firefox job.
+ - Added --browser option for selecting chrome or firefox to run tests in. Default is chrome.
+ - Renamed fixture 'browser' to 'remote_browser'.
+
 ## 1.0.0 
  - Bump version for release.
 
