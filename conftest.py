@@ -30,6 +30,10 @@ def pytest_addoption(parser):
     parser.addoption('--browser',
                      help='Which test browser?',
                      default='chrome')
+    parser.addoption('--local',
+                     help='local or CI?',
+                     choices=['true', 'false'],
+                     default='true')
 
 
 @pytest.fixture(scope='session')
@@ -37,22 +41,45 @@ def test_browser(request):
     return request.config.getoption('--browser')
 
 
+@pytest.fixture(scope='session')
+def local(request):
+    return request.config.getoption('--local')
+
+
 @pytest.fixture(scope='function')
-def remote_browser(test_browser) -> Remote:
-    """ Select configuration depends on browser """
-    if test_browser == 'firefox':
-        driver = webdriver.Remote(
-            options=webdriver.FirefoxOptions(),
-            command_executor='http://selenium__standalone-firefox:4444/wd/hub'
-        )
-        return driver
-
-    elif test_browser == 'chrome':
-        driver = webdriver.Remote(
-            options=webdriver.ChromeOptions(),
-            command_executor='http://selenium__standalone-chrome:4444/wd/hub'
-        )
-        return driver
-
+def remote_browser(test_browser, local) -> Remote:
+    """ Select configuration depends on browser and host
+    """
+    if local == 'false':
+        if test_browser == 'firefox':
+            driver = webdriver.Remote(
+                options=webdriver.FirefoxOptions(),
+                command_executor='http://selenium__standalone-firefox'
+                                 ':4444/wd/hub')
+        elif test_browser == 'chrome':
+            driver = webdriver.Remote(
+                options=webdriver.ChromeOptions(),
+                command_executor='http://selenium__standalone-chrome'
+                                 ':4444/wd/hub')
+        else:
+            raise ValueError(f'--browser="{test_browser}" '
+                             f'is not chrome or firefox')
+    elif local == 'true':
+        if test_browser == 'firefox':
+            driver = webdriver.Remote(
+                options=webdriver.FirefoxOptions(),
+                command_executor='http://localhost:4444/wd/hub')
+        elif test_browser == 'chrome':
+            driver = webdriver.Remote(
+                options=webdriver.ChromeOptions(),
+                command_executor='http://localhost:4444/wd/hub')
+        else:
+            raise ValueError(f'--browser="{test_browser}" '
+                             f'is not chrome or firefox')
     else:
-        raise ValueError(f'--browser={test_browser} is not chrome or firefox')
+        raise ValueError(f'--local={local}". Driver could not be setup.\n'
+                         'pass option --local="true" if local execute\n'
+                         'pass option --local="false" if use CI service')
+
+    yield driver
+    driver.quit()
