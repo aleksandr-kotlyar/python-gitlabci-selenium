@@ -31,7 +31,7 @@ variables:
   before_script:
     - pip3 install -r requirements.txt
   script:
-    - pytest --browser=$BROWSER
+    - pytest --browser=$BROWSER --local='false'
 
 e2e:remote:chrome:
   extends: .job_template
