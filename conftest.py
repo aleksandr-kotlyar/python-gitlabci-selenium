@@ -61,6 +61,11 @@ def remote_browser(test_browser, local) -> Remote:
                 options=webdriver.ChromeOptions(),
                 command_executor='http://selenium__standalone-chrome'
                                  ':4444/wd/hub')
+        elif test_browser == 'opera':
+            driver = webdriver.Remote(
+                options=webdriver.ChromeOptions(),
+                command_executor='http://selenium__standalone-opera'
+                                 ':4444/wd/hub')
         else:
             raise ValueError(f'--browser="{test_browser}" '
                              f'is not chrome or firefox')
@@ -70,6 +75,10 @@ def remote_browser(test_browser, local) -> Remote:
                 options=webdriver.FirefoxOptions(),
                 command_executor='http://localhost:4444/wd/hub')
         elif test_browser == 'chrome':
+            driver = webdriver.Remote(
+                options=webdriver.ChromeOptions(),
+                command_executor='http://localhost:4444/wd/hub')
+        elif test_browser == 'opera':
             driver = webdriver.Remote(
                 options=webdriver.ChromeOptions(),
                 command_executor='http://localhost:4444/wd/hub')

@@ -48,3 +48,11 @@ e2e:remote:firefox:
   only:
     variables:
       - $BROWSER == 'firefox'
+
+e2e:remote:opera:
+  extends: .job_template
+  services:
+    - selenium/standalone-opera
+  only:
+    variables:
+      - $BROWSER == 'opera'
