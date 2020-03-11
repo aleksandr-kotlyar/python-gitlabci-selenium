@@ -19,9 +19,17 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
+from pytest import raises
+from selenium.common.exceptions import NoSuchElementException
 
 
 def test_query_window_is_visible(remote_browser):
     remote_browser.get('https://google.com')
     query_window = remote_browser.find_element_by_name('q')
     assert query_window.is_displayed()
+
+
+def test_logo_is_not_visible(remote_browser):
+    remote_browser.get('https://yandex.ru')
+    with raises(NoSuchElementException):
+        remote_browser.find_element_by_id('lga')
