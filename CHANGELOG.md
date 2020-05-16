@@ -1,5 +1,13 @@
 # Changelog
 
+## 3.0.0 (to be released on *.06.2020)
+ - Add GitHub Actions CI execution script of Selenium tests for different browsers.
+
+## 2.2.0 (Released 16.05.2020)
+ - Totally updated About in README  
+ - Added documentation for fixtures. 
+ - Compacted condition tree in remote browser fixture at x2 times.
+
 ## 2.1.0 (Released 09.03.2020)
  - Added execution on localhost selenium hub.
  - Added README
