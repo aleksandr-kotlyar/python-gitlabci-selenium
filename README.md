@@ -1,13 +1,13 @@
 # Selenium with Docker and GitLab
 ## About
-This is one example of how you can implement automation on a project with Selenium and GitLab.
-#### Browsers
+Python project template for those who want to quickly start running their Selenium tests in GitLabCI. The template will be helpful enough for the first time if you just starting new test automation project and need a simple CI or even if you are new to GitLab, Docker, Selenium but need to run tests in CI.
+#### Browsers support
 - Chrome (default)
 - Firefox
 ## GitLab Usage
 - To run job with Chrome just run pipeline with one of the Triggers
 - To run job with Firefox set GitLab variable BROWSER=firefox and run pipeline with one of the Triggers 
-#### Triggers
+#### CI Triggers
 - **Manual** "Run pipeline" from WebUI
 - **Schedule** to start pipeline by cron
 - **Push** commit to gitlab and pipeline will start automatically
