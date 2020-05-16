@@ -27,29 +27,28 @@ from selenium.webdriver import Remote
 
 def pytest_addoption(parser):
     """ Parse pytest --option variables from shell """
-    parser.addoption('--browser',
-                     help='Which test browser?',
+    parser.addoption('--browser', help='Which test browser?',
                      default='chrome')
-    parser.addoption('--local',
-                     help='local or CI?',
+    parser.addoption('--local', help='local or CI?',
                      choices=['true', 'false'],
                      default='true')
 
 
 @pytest.fixture(scope='session')
 def test_browser(request):
+    """ :returns Browser.NAME from --browser option """
     return request.config.getoption('--browser')
 
 
 @pytest.fixture(scope='session')
 def local(request):
+    """ :returns true or false from --local option """
     return request.config.getoption('--local')
 
 
 @pytest.fixture(scope='function')
 def remote_browser(test_browser, local) -> Remote:
-    """ Select configuration depends on browser and host
-    """
+    """ Select configuration depends on browser and host """
     if local == 'false':
         if test_browser == 'firefox':
             driver = webdriver.Remote(
@@ -62,8 +61,8 @@ def remote_browser(test_browser, local) -> Remote:
                 command_executor='http://selenium__standalone-chrome'
                                  ':4444/wd/hub')
         else:
-            raise ValueError(f'--browser="{test_browser}" '
-                             f'is not chrome or firefox')
+            raise ValueError(
+                f"--browser='{test_browser}' is not 'chrome' or 'firefox'")
     elif local == 'true':
         if test_browser == 'firefox':
             driver = webdriver.Remote(
@@ -74,12 +73,12 @@ def remote_browser(test_browser, local) -> Remote:
                 options=webdriver.ChromeOptions(),
                 command_executor='http://localhost:4444/wd/hub')
         else:
-            raise ValueError(f'--browser="{test_browser}" '
-                             f'is not chrome or firefox')
+            raise ValueError(
+                f"--browser='{test_browser}' is not 'chrome' or 'firefox'")
     else:
-        raise ValueError(f'--local={local}". Driver could not be setup.\n'
-                         'pass option --local="true" if local execute\n'
-                         'pass option --local="false" if use CI service')
+        raise ValueError(f'--local="{local}". Driver could not be setup.\n'
+                         'pass "true" if local execute\n'
+                         'pass "false" if use CI service')
 
     yield driver
     driver.quit()
