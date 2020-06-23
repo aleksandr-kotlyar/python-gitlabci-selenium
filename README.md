@@ -1,6 +1,6 @@
 # Selenium with Docker and GitLab
 ## About
-Python project template for those who want to quickly start running their Selenium tests in GitLabCI. The template will be helpful enough for the first time if you just starting new test automation project and need a simple CI or even if you are new to GitLab, Docker, Selenium but need to run tests in CI.
+Python project template for those who want to quickly start running their Selenium tests in GitLabCI. The template will be helpful enough for the first time if you just starting new test automation project and need a simple CI or even if you are new to GitLab, Docker, Selenium but need to run Selenium tests in CI.
 #### Browsers support
 - Chrome (default)
 - Firefox

@@ -1,8 +1,19 @@
 # Changelog
 
+## 4.0.0 (to be released on *.07.2020)
+ - Add execution in Azure pipelines.
+
+## 3.0.0 (to be released on *.06.2020)
+ - Add execution in GitHub Actions.
+
+## 2.2.0 (Released 16.05.2020)
+ - Totally updated About in README.
+ - Added documentation for fixtures.
+ - Compacted condition tree in remote browser fixture at x2 times.
+
 ## 2.1.0 (Released 09.03.2020)
  - Added execution on localhost selenium hub.
- - Added README
+ - Added README.
 
 ## 2.0.0 (Released 08.03.2020)
  - Added LICENSE for using.
@@ -14,7 +25,7 @@
  - Bump version for release.
 
 ## 0.1.1
- - fixed: throw chrome Options() to Remote webdriver
+ - Fixed: throw chrome Options() to Remote webdriver.
 
 ## 0.1.0
- - created simple gitlab-ci testing project with selenium, remote standalone-chrome and one selenium test in ci job.
+ - Created simple gitlab-ci testing project with selenium, remote standalone-chrome and one selenium test in ci job.

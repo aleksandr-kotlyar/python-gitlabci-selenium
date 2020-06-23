@@ -49,36 +49,24 @@ def local(request):
 @pytest.fixture(scope='function')
 def remote_browser(test_browser, local) -> Remote:
     """ Select configuration depends on browser and host """
-    if local == 'false':
-        if test_browser == 'firefox':
-            driver = webdriver.Remote(
-                options=webdriver.FirefoxOptions(),
-                command_executor='http://selenium__standalone-firefox'
-                                 ':4444/wd/hub')
-        elif test_browser == 'chrome':
-            driver = webdriver.Remote(
-                options=webdriver.ChromeOptions(),
-                command_executor='http://selenium__standalone-chrome'
-                                 ':4444/wd/hub')
-        else:
-            raise ValueError(
-                f"--browser='{test_browser}' is not 'chrome' or 'firefox'")
-    elif local == 'true':
-        if test_browser == 'firefox':
-            driver = webdriver.Remote(
-                options=webdriver.FirefoxOptions(),
-                command_executor='http://localhost:4444/wd/hub')
-        elif test_browser == 'chrome':
-            driver = webdriver.Remote(
-                options=webdriver.ChromeOptions(),
-                command_executor='http://localhost:4444/wd/hub')
-        else:
-            raise ValueError(
-                f"--browser='{test_browser}' is not 'chrome' or 'firefox'")
-    else:
-        raise ValueError(f'--local="{local}". Driver could not be setup.\n'
+    if local != 'true' and local != 'false':
+        raise ValueError(f'--local={local}". Driver could not be setup.\n'
                          'pass "true" if local execute\n'
                          'pass "false" if use CI service')
-
+    cmd_executor = {
+        'true': 'http://localhost:4444/wd/hub',
+        'false': f'http://selenium__standalone-{test_browser}:4444/wd/hub'
+    }
+    if test_browser == 'firefox':
+        driver = webdriver.Remote(
+            options=webdriver.FirefoxOptions(),
+            command_executor=cmd_executor[local])
+    elif test_browser == 'chrome':
+        driver = webdriver.Remote(
+            options=webdriver.ChromeOptions(),
+            command_executor=cmd_executor[local])
+    else:
+        raise ValueError(
+            f'--browser="{test_browser}" is not chrome or firefox')
     yield driver
     driver.quit()
