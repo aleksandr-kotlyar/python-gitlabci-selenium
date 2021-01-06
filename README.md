@@ -1,4 +1,11 @@
 # Selenium with Docker and GitLab
+
+![GitHub statistics](https://raw.githubusercontent.com/aleksandr-kotlyar/python-gitlabci-selenium/traffic-2021/traffic-python-gitlabci-selenium/in_2021.svg)
+![GitHub views](https://raw.githubusercontent.com/aleksandr-kotlyar/python-gitlabci-selenium/traffic-2021/traffic-python-gitlabci-selenium/views.svg)
+![GitHub views per week](https://raw.githubusercontent.com/aleksandr-kotlyar/python-gitlabci-selenium/traffic-2021/traffic-python-gitlabci-selenium/views_per_week.svg)
+![GitHub clones](https://raw.githubusercontent.com/aleksandr-kotlyar/python-gitlabci-selenium/traffic-2021/traffic-python-gitlabci-selenium/clones.svg)
+![GitHub clones per week](https://raw.githubusercontent.com/aleksandr-kotlyar/python-gitlabci-selenium/traffic-2021/traffic-python-gitlabci-selenium/clones_per_week.svg)
+
 ## About
 Python project template for those who want to quickly start running their Selenium tests in GitLabCI. The template will be helpful enough for the first time if you just starting new test automation project and need a simple CI or even if you are new to GitLab, Docker, Selenium but need to run Selenium tests in CI.
 #### Browsers support
