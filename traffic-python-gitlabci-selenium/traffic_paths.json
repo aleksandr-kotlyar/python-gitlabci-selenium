@@ -1,7 +1,25 @@
 [
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium",
-    "title": "aleksandr-kotlyar/python-gitlabci-selenium: Python project template for multi...",
+    "title": "GitHub - aleksandr-kotlyar/python-gitlabci-selenium: Python project template ...",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.gitlab-ci.yml",
+    "title": "python-gitlabci-selenium/.gitlab-ci.yml at master · aleksandr-kotlyar/python-...",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/1.0.0",
+    "title": "Release stable · aleksandr-kotlyar/python-gitlabci-selenium · GitHub",
+    "count": 1,
+    "uniques": 1
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.0.0",
+    "title": "Release Merge branch 'v2.0.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
     "count": 1,
     "uniques": 1
   }
