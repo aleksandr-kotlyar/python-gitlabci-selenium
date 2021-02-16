@@ -1,61 +1,7 @@
 [
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium",
-    "title": "GitHub - aleksandr-kotlyar/python-gitlabci-selenium: Python project template ...",
-    "count": 4,
-    "uniques": 2
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.gitlab-ci.yml",
-    "title": "python-gitlabci-selenium/.gitlab-ci.yml at master · aleksandr-kotlyar/python-...",
-    "count": 2,
-    "uniques": 1
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/31aadea799e37cba51af6bd8faa63cb4c19b7ec6/.gitlab-ci.yml",
-    "title": "python-gitlabci-selenium/.gitlab-ci.yml at 31aadea799e37cba51af6bd8faa63cb4c1...",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/93f680834a0dbd991796322118840a4231302fe1/.gitlab-ci.yml",
-    "title": "python-gitlabci-selenium/.gitlab-ci.yml at 93f680834a0dbd991796322118840a4231...",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/conftest.py",
-    "title": "python-gitlabci-selenium/conftest.py at master · aleksandr-kotlyar/python-git...",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.github/workflows/traffic2badge.yml",
-    "title": "python-gitlabci-selenium/traffic2badge.yml at master · aleksandr-kotlyar/pyth...",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/__init__.py",
-    "title": "python-gitlabci-selenium/__init__.py at master · aleksandr-kotlyar/python-git...",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/README.md",
-    "title": "python-gitlabci-selenium/README.md at master · aleksandr-kotlyar/python-gitla...",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/requirements.txt",
-    "title": "python-gitlabci-selenium/requirements.txt at master · aleksandr-kotlyar/pytho...",
-    "count": 1,
-    "uniques": 1
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/commit/31aadea799e37cba51af6bd8faa63cb4c19b7ec6",
-    "title": "Merge branch 'v1.0.0' into 'master' · aleksandr-kotlyar/python-gitlabci-selen...",
+    "title": "aleksandr-kotlyar/python-gitlabci-selenium: Python project template for multi...",
     "count": 1,
     "uniques": 1
   }
