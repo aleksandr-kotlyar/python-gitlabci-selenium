@@ -8,8 +8,14 @@
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/1.0.0",
     "title": "Release stable · aleksandr-kotlyar/python-gitlabci-selenium · GitHub",
-    "count": 8,
-    "uniques": 7
+    "count": 11,
+    "uniques": 9
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.1.0",
+    "title": "Release Merge branch 'v2.1.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
+    "count": 7,
+    "uniques": 5
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.gitlab-ci.yml",
@@ -18,22 +24,16 @@
     "uniques": 4
   },
   {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.1.0",
-    "title": "Release Merge branch 'v2.1.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
-    "count": 6,
-    "uniques": 4
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.0.0",
+    "title": "Release Merge branch 'v2.0.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
+    "count": 5,
+    "uniques": 5
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/requirements.txt",
     "title": "python-gitlabci-selenium/requirements.txt at master · aleksandr-kotlyar/pytho...",
     "count": 5,
     "uniques": 3
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.0.0",
-    "title": "Release Merge branch 'v2.0.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
-    "count": 4,
-    "uniques": 4
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/master/tests",
