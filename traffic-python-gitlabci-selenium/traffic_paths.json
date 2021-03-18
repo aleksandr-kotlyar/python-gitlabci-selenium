@@ -2,7 +2,7 @@
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium",
     "title": "GitHub - aleksandr-kotlyar/python-gitlabci-selenium: Python project template ...",
-    "count": 18,
+    "count": 14,
     "uniques": 4
   },
   {
@@ -12,40 +12,34 @@
     "uniques": 9
   },
   {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/master/tests",
-    "title": "python-gitlabci-selenium/tests at master · aleksandr-kotlyar/python-gitlabci-...",
-    "count": 8,
-    "uniques": 3
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/conftest.py",
-    "title": "python-gitlabci-selenium/conftest.py at master · aleksandr-kotlyar/python-git...",
-    "count": 8,
-    "uniques": 2
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.gitlab-ci.yml",
-    "title": "python-gitlabci-selenium/.gitlab-ci.yml at master · aleksandr-kotlyar/python-...",
-    "count": 8,
-    "uniques": 2
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.0.0",
-    "title": "Release Merge branch 'v2.0.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.1.0",
+    "title": "Release Merge branch 'v2.1.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
     "count": 6,
     "uniques": 5
   },
   {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/tests/test_google.py",
-    "title": "python-gitlabci-selenium/test_google.py at master · aleksandr-kotlyar/python-...",
-    "count": 6,
-    "uniques": 3
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.1.0",
-    "title": "Release Merge branch 'v2.1.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.0.0",
+    "title": "Release Merge branch 'v2.0.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
     "count": 5,
     "uniques": 4
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/conftest.py",
+    "title": "python-gitlabci-selenium/conftest.py at master · aleksandr-kotlyar/python-git...",
+    "count": 5,
+    "uniques": 2
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/master/tests",
+    "title": "python-gitlabci-selenium/tests at master · aleksandr-kotlyar/python-gitlabci-...",
+    "count": 5,
+    "uniques": 2
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/tests/test_google.py",
+    "title": "python-gitlabci-selenium/test_google.py at master · aleksandr-kotlyar/python-...",
+    "count": 4,
+    "uniques": 2
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/branches",
@@ -58,5 +52,11 @@
     "title": "aleksandr-kotlyar/python-gitlabci-selenium at traffic-2021",
     "count": 4,
     "uniques": 1
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.gitlab-ci.yml",
+    "title": "python-gitlabci-selenium/.gitlab-ci.yml at master · aleksandr-kotlyar/python-...",
+    "count": 3,
+    "uniques": 2
   }
 ]
