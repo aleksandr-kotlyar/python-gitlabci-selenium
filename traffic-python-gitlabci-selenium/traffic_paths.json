@@ -3,13 +3,13 @@
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium",
     "title": "GitHub - aleksandr-kotlyar/python-gitlabci-selenium: Python project template ...",
     "count": 14,
-    "uniques": 4
+    "uniques": 5
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/1.0.0",
     "title": "Release stable · aleksandr-kotlyar/python-gitlabci-selenium · GitHub",
-    "count": 12,
-    "uniques": 9
+    "count": 13,
+    "uniques": 10
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/master/tests",
@@ -22,12 +22,6 @@
     "title": "Release Merge branch 'v2.0.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
     "count": 4,
     "uniques": 3
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/conftest.py",
-    "title": "python-gitlabci-selenium/conftest.py at master · aleksandr-kotlyar/python-git...",
-    "count": 4,
-    "uniques": 2
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/tests/test_google.py",
@@ -52,6 +46,12 @@
     "title": "Release Merge branch 'v2.1.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
     "count": 3,
     "uniques": 3
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/conftest.py",
+    "title": "python-gitlabci-selenium/conftest.py at master · aleksandr-kotlyar/python-git...",
+    "count": 3,
+    "uniques": 2
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/actions/workflows/traffic2badge.yml",
