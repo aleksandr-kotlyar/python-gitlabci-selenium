@@ -8,20 +8,14 @@
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/1.0.0",
     "title": "Release stable · aleksandr-kotlyar/python-gitlabci-selenium · GitHub",
-    "count": 7,
-    "uniques": 6
+    "count": 5,
+    "uniques": 5
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.1.0",
     "title": "Release Merge branch 'v2.1.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
     "count": 3,
     "uniques": 3
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.0.0",
-    "title": "Release Merge branch 'v2.0.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
-    "count": 3,
-    "uniques": 2
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.github/workflows/traffic2badge.yml",
