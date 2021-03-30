@@ -2,20 +2,14 @@
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium",
     "title": "GitHub - aleksandr-kotlyar/python-gitlabci-selenium: Python project template ...",
-    "count": 31,
+    "count": 33,
     "uniques": 11
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/conftest.py",
     "title": "python-gitlabci-selenium/conftest.py at master · aleksandr-kotlyar/python-git...",
-    "count": 12,
-    "uniques": 3
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/1.0.0",
-    "title": "Release stable · aleksandr-kotlyar/python-gitlabci-selenium · GitHub",
-    "count": 11,
-    "uniques": 9
+    "count": 13,
+    "uniques": 4
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.gitlab-ci.yml",
@@ -26,19 +20,19 @@
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/master/tests",
     "title": "python-gitlabci-selenium/tests at master · aleksandr-kotlyar/python-gitlabci-...",
+    "count": 11,
+    "uniques": 4
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/1.0.0",
+    "title": "Release stable · aleksandr-kotlyar/python-gitlabci-selenium · GitHub",
     "count": 10,
-    "uniques": 3
+    "uniques": 8
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/tests/test_google.py",
     "title": "python-gitlabci-selenium/test_google.py at master · aleksandr-kotlyar/python-...",
-    "count": 9,
-    "uniques": 3
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.1.0",
-    "title": "Release Merge branch 'v2.1.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
-    "count": 5,
+    "count": 10,
     "uniques": 4
   },
   {
@@ -50,6 +44,12 @@
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/requirements.txt",
     "title": "python-gitlabci-selenium/requirements.txt at master · aleksandr-kotlyar/pytho...",
+    "count": 3,
+    "uniques": 2
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.1.0",
+    "title": "Release Merge branch 'v2.1.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
     "count": 3,
     "uniques": 2
   },
