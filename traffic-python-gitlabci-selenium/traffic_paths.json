@@ -2,8 +2,8 @@
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium",
     "title": "aleksandr-kotlyar/python-gitlabci-selenium: Python project template for multi...",
-    "count": 17,
-    "uniques": 6
+    "count": 16,
+    "uniques": 5
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/conftest.py",
@@ -42,12 +42,6 @@
     "uniques": 3
   },
   {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.gitlab-ci.yml",
-    "title": "python-gitlabci-selenium/.gitlab-ci.yml at master · aleksandr-kotlyar/python-...",
-    "count": 4,
-    "uniques": 2
-  },
-  {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/__init__.py",
     "title": "python-gitlabci-selenium/__init__.py at master · aleksandr-kotlyar/python-git...",
     "count": 4,
@@ -58,5 +52,11 @@
     "title": "Releases · aleksandr-kotlyar/python-gitlabci-selenium · GitHub",
     "count": 3,
     "uniques": 2
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.gitlab-ci.yml",
+    "title": "python-gitlabci-selenium/.gitlab-ci.yml at master · aleksandr-kotlyar/python-...",
+    "count": 3,
+    "uniques": 1
   }
 ]
