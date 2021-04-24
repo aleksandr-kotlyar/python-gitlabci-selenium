@@ -2,26 +2,32 @@
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium",
     "title": "GitHub - aleksandr-kotlyar/python-gitlabci-selenium: Python project template ...",
-    "count": 10,
-    "uniques": 7
+    "count": 19,
+    "uniques": 11
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/1.0.0",
     "title": "Release stable · aleksandr-kotlyar/python-gitlabci-selenium · GitHub",
-    "count": 7,
-    "uniques": 5
+    "count": 8,
+    "uniques": 6
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.gitlab-ci.yml",
     "title": "python-gitlabci-selenium/.gitlab-ci.yml at master · aleksandr-kotlyar/python-...",
-    "count": 5,
-    "uniques": 3
+    "count": 7,
+    "uniques": 4
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/conftest.py",
     "title": "python-gitlabci-selenium/conftest.py at master · aleksandr-kotlyar/python-git...",
+    "count": 5,
+    "uniques": 5
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/master/.github/workflows",
+    "title": "python-gitlabci-selenium/.github/workflows at master · aleksandr-kotlyar/pyth...",
     "count": 4,
-    "uniques": 4
+    "uniques": 2
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/tests/test_google.py",
@@ -48,15 +54,9 @@
     "uniques": 2
   },
   {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/master/.github/workflows",
-    "title": "python-gitlabci-selenium/.github/workflows at master · aleksandr-kotlyar/pyth...",
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.0.0",
+    "title": "Release Merge branch 'v2.0.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
     "count": 2,
     "uniques": 2
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.github/workflows/traffic2badge.yml",
-    "title": "python-gitlabci-selenium/traffic2badge.yml at master · aleksandr-kotlyar/pyth...",
-    "count": 1,
-    "uniques": 1
   }
 ]
