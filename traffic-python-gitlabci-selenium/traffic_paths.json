@@ -2,14 +2,14 @@
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium",
     "title": "GitHub - aleksandr-kotlyar/python-gitlabci-selenium: Python project template ...",
-    "count": 32,
-    "uniques": 11
+    "count": 33,
+    "uniques": 12
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/1.0.0",
     "title": "Release stable · aleksandr-kotlyar/python-gitlabci-selenium · GitHub",
-    "count": 22,
-    "uniques": 12
+    "count": 29,
+    "uniques": 14
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.gitlab-ci.yml",
@@ -38,25 +38,25 @@
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.0.0",
     "title": "Release Merge branch 'v2.0.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
-    "count": 8,
-    "uniques": 5
+    "count": 9,
+    "uniques": 6
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/requirements.txt",
     "title": "python-gitlabci-selenium/requirements.txt at master · aleksandr-kotlyar/pytho...",
-    "count": 6,
-    "uniques": 5
+    "count": 5,
+    "uniques": 4
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/__init__.py",
     "title": "python-gitlabci-selenium/__init__.py at master · aleksandr-kotlyar/python-git...",
-    "count": 5,
-    "uniques": 5
+    "count": 4,
+    "uniques": 4
   },
   {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/2eefd0b7d859b830b5dbdb0fd1afdc39c4fd2666/tests/test_google.py",
-    "title": "python-gitlabci-selenium/test_google.py at 2eefd0b7d859b830b5dbdb0fd1afdc39c4...",
-    "count": 5,
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tags",
+    "title": "Tags · aleksandr-kotlyar/python-gitlabci-selenium",
+    "count": 4,
     "uniques": 1
   }
 ]
