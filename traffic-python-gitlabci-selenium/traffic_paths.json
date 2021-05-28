@@ -2,38 +2,44 @@
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium",
     "title": "GitHub - aleksandr-kotlyar/python-gitlabci-selenium: Python project template ...",
-    "count": 24,
-    "uniques": 13
+    "count": 29,
+    "uniques": 14
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/1.0.0",
     "title": "Release stable · aleksandr-kotlyar/python-gitlabci-selenium · GitHub",
-    "count": 16,
+    "count": 19,
     "uniques": 13
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.gitlab-ci.yml",
     "title": "python-gitlabci-selenium/.gitlab-ci.yml at master · aleksandr-kotlyar/python-...",
-    "count": 13,
-    "uniques": 7
+    "count": 18,
+    "uniques": 8
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/master/tests",
     "title": "python-gitlabci-selenium/tests at master · aleksandr-kotlyar/python-gitlabci-...",
-    "count": 6,
+    "count": 9,
+    "uniques": 8
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/conftest.py",
+    "title": "python-gitlabci-selenium/conftest.py at master · aleksandr-kotlyar/python-git...",
+    "count": 9,
     "uniques": 5
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/tests/test_google.py",
+    "title": "python-gitlabci-selenium/test_google.py at master · aleksandr-kotlyar/python-...",
+    "count": 8,
+    "uniques": 7
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/1.0.0",
     "title": "aleksandr-kotlyar/python-gitlabci-selenium at 1.0.0",
     "count": 6,
     "uniques": 2
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/tests/test_google.py",
-    "title": "python-gitlabci-selenium/test_google.py at master · aleksandr-kotlyar/python-...",
-    "count": 5,
-    "uniques": 4
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.1.0",
@@ -46,12 +52,6 @@
     "title": "Release Merge branch 'v2.0.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
     "count": 5,
     "uniques": 2
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/conftest.py",
-    "title": "python-gitlabci-selenium/conftest.py at master · aleksandr-kotlyar/python-git...",
-    "count": 4,
-    "uniques": 4
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/requirements.txt",
