@@ -2,7 +2,7 @@
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium",
     "title": "GitHub - aleksandr-kotlyar/python-gitlabci-selenium: Python project template ...",
-    "count": 24,
+    "count": 23,
     "uniques": 15
   },
   {
@@ -42,12 +42,6 @@
     "uniques": 2
   },
   {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.0.0",
-    "title": "Release Merge branch 'v2.0.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
-    "count": 5,
-    "uniques": 3
-  },
-  {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/1.0.0/conftest.py",
     "title": "python-gitlabci-selenium/conftest.py at 1.0.0 · aleksandr-kotlyar/python-gitl...",
     "count": 4,
@@ -58,5 +52,11 @@
     "title": "v2.1.0 Add --local execution parameter. · aleksandr-kotlyar/python-gitlabci-s...",
     "count": 4,
     "uniques": 2
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.1.0",
+    "title": "Release Merge branch 'v2.1.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
+    "count": 3,
+    "uniques": 3
   }
 ]
