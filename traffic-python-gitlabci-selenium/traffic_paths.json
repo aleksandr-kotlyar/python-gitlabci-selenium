@@ -2,20 +2,26 @@
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium",
     "title": "GitHub - aleksandr-kotlyar/python-gitlabci-selenium: Python project template ...",
-    "count": 24,
-    "uniques": 15
+    "count": 27,
+    "uniques": 16
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/1.0.0",
     "title": "Release stable · aleksandr-kotlyar/python-gitlabci-selenium · GitHub",
-    "count": 14,
-    "uniques": 9
+    "count": 18,
+    "uniques": 12
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/1.0.0",
+    "title": "GitHub - aleksandr-kotlyar/python-gitlabci-selenium at 1.0.0",
+    "count": 17,
+    "uniques": 4
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.gitlab-ci.yml",
     "title": "python-gitlabci-selenium/.gitlab-ci.yml at master · aleksandr-kotlyar/python-...",
-    "count": 13,
-    "uniques": 6
+    "count": 14,
+    "uniques": 7
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/conftest.py",
@@ -24,10 +30,10 @@
     "uniques": 4
   },
   {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/1.0.0",
-    "title": "GitHub - aleksandr-kotlyar/python-gitlabci-selenium at 1.0.0",
-    "count": 9,
-    "uniques": 3
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/1.0.0/conftest.py",
+    "title": "python-gitlabci-selenium/conftest.py at 1.0.0 · aleksandr-kotlyar/python-gitl...",
+    "count": 7,
+    "uniques": 4
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/master/tests",
@@ -42,21 +48,15 @@
     "uniques": 5
   },
   {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/1.0.0/conftest.py",
-    "title": "python-gitlabci-selenium/conftest.py at 1.0.0 · aleksandr-kotlyar/python-gitl...",
-    "count": 5,
-    "uniques": 3
-  },
-  {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.0.0",
     "title": "Release Merge branch 'v2.0.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
-    "count": 4,
-    "uniques": 3
+    "count": 5,
+    "uniques": 4
   },
   {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/commit/bde29d9bd882efe3575c2ad36e0c1a6f39ded976",
-    "title": "v2.1.0 Add --local execution parameter. · aleksandr-kotlyar/python-gitlabci-s...",
-    "count": 4,
-    "uniques": 2
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/1.0.0/tests",
+    "title": "python-gitlabci-selenium/tests at 1.0.0 · aleksandr-kotlyar/python-gitlabci-s...",
+    "count": 5,
+    "uniques": 3
   }
 ]
