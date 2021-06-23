@@ -2,61 +2,61 @@
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium",
     "title": "GitHub - aleksandr-kotlyar/python-gitlabci-selenium: Python project template ...",
-    "count": 44,
-    "uniques": 22
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/1.0.0",
-    "title": "Release stable · aleksandr-kotlyar/python-gitlabci-selenium · GitHub",
-    "count": 28,
-    "uniques": 14
+    "count": 48,
+    "uniques": 24
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.gitlab-ci.yml",
     "title": "python-gitlabci-selenium/.gitlab-ci.yml at master · aleksandr-kotlyar/python-...",
-    "count": 25,
-    "uniques": 17
+    "count": 31,
+    "uniques": 19
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/1.0.0",
+    "title": "Release stable · aleksandr-kotlyar/python-gitlabci-selenium · GitHub",
+    "count": 24,
+    "uniques": 14
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/conftest.py",
     "title": "python-gitlabci-selenium/conftest.py at master · aleksandr-kotlyar/python-git...",
-    "count": 16,
-    "uniques": 9
+    "count": 19,
+    "uniques": 10
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/master/tests",
     "title": "python-gitlabci-selenium/tests at master · aleksandr-kotlyar/python-gitlabci-...",
-    "count": 12,
-    "uniques": 8
+    "count": 15,
+    "uniques": 9
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.0.0",
     "title": "Release Merge branch 'v2.0.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
-    "count": 11,
-    "uniques": 9
+    "count": 12,
+    "uniques": 10
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/tests/test_google.py",
     "title": "python-gitlabci-selenium/test_google.py at master · aleksandr-kotlyar/python-...",
-    "count": 7,
-    "uniques": 7
+    "count": 9,
+    "uniques": 8
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/master/.github/workflows",
     "title": "python-gitlabci-selenium/.github/workflows at master · aleksandr-kotlyar/pyth...",
-    "count": 7,
-    "uniques": 5
+    "count": 9,
+    "uniques": 7
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.github/workflows/traffic2badge.yml",
     "title": "python-gitlabci-selenium/traffic2badge.yml at master · aleksandr-kotlyar/pyth...",
-    "count": 6,
-    "uniques": 5
+    "count": 8,
+    "uniques": 7
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/requirements.txt",
     "title": "python-gitlabci-selenium/requirements.txt at master · aleksandr-kotlyar/pytho...",
-    "count": 5,
-    "uniques": 4
+    "count": 6,
+    "uniques": 5
   }
 ]
