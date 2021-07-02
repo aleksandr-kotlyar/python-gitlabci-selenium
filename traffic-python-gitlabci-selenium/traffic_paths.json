@@ -2,8 +2,8 @@
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.gitlab-ci.yml",
     "title": "python-gitlabci-selenium/.gitlab-ci.yml at master · aleksandr-kotlyar/python-...",
-    "count": 22,
-    "uniques": 7
+    "count": 21,
+    "uniques": 6
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium",
@@ -14,18 +14,18 @@
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/1.0.0",
     "title": "Release stable · aleksandr-kotlyar/python-gitlabci-selenium · GitHub",
-    "count": 9,
+    "count": 10,
     "uniques": 8
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/master/tests",
-    "title": "python-gitlabci-selenium/tests at master · aleksandr-kotlyar/python-gitlabci-...",
-    "count": 9,
-    "uniques": 6
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/conftest.py",
     "title": "python-gitlabci-selenium/conftest.py at master · aleksandr-kotlyar/python-git...",
+    "count": 8,
+    "uniques": 5
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/master/tests",
+    "title": "python-gitlabci-selenium/tests at master · aleksandr-kotlyar/python-gitlabci-...",
     "count": 8,
     "uniques": 5
   },
@@ -48,14 +48,14 @@
     "uniques": 4
   },
   {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/1.0.0/.gitlab-ci.yml",
-    "title": "python-gitlabci-selenium/.gitlab-ci.yml at 1.0.0 · aleksandr-kotlyar/python-g...",
-    "count": 2,
-    "uniques": 2
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.1.0",
+    "title": "Release Merge branch 'v2.1.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
+    "count": 3,
+    "uniques": 3
   },
   {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.github/workflows/traffic2badge.yml",
-    "title": "python-gitlabci-selenium/traffic2badge.yml at master · aleksandr-kotlyar/pyth...",
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/1.0.0/.gitlab-ci.yml",
+    "title": "python-gitlabci-selenium/.gitlab-ci.yml at 1.0.0 · aleksandr-kotlyar/python-g...",
     "count": 2,
     "uniques": 2
   }
