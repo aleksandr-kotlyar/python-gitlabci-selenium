@@ -18,16 +18,16 @@
     "uniques": 8
   },
   {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/conftest.py",
-    "title": "python-gitlabci-selenium/conftest.py at master · aleksandr-kotlyar/python-git...",
-    "count": 9,
-    "uniques": 6
-  },
-  {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/master/tests",
     "title": "python-gitlabci-selenium/tests at master · aleksandr-kotlyar/python-gitlabci-...",
     "count": 9,
     "uniques": 6
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/conftest.py",
+    "title": "python-gitlabci-selenium/conftest.py at master · aleksandr-kotlyar/python-git...",
+    "count": 8,
+    "uniques": 5
   },
   {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/tests/test_google.py",
@@ -36,26 +36,26 @@
     "uniques": 5
   },
   {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.1.0",
+    "title": "Release Merge branch 'v2.1.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
+    "count": 4,
+    "uniques": 4
+  },
+  {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/tree/master/.github/workflows",
     "title": "python-gitlabci-selenium/.github/workflows at master · aleksandr-kotlyar/pyth...",
     "count": 4,
     "uniques": 4
   },
   {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.0.0",
-    "title": "Release Merge branch 'v2.0.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
-    "count": 3,
-    "uniques": 3
-  },
-  {
-    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/releases/tag/2.1.0",
-    "title": "Release Merge branch 'v2.1.0' into 'master' · aleksandr-kotlyar/python-gitlab...",
-    "count": 3,
-    "uniques": 3
-  },
-  {
     "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/.github/workflows/traffic2badge.yml",
     "title": "python-gitlabci-selenium/traffic2badge.yml at master · aleksandr-kotlyar/pyth...",
+    "count": 2,
+    "uniques": 2
+  },
+  {
+    "path": "/aleksandr-kotlyar/python-gitlabci-selenium/blob/master/__init__.py",
+    "title": "python-gitlabci-selenium/__init__.py at master · aleksandr-kotlyar/python-git...",
     "count": 2,
     "uniques": 2
   }
