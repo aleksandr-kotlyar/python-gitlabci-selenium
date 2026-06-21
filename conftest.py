@@ -20,6 +20,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+import os
+import re
+from pathlib import Path
+
 import pytest
 from selenium import webdriver
 from selenium.webdriver import Remote
@@ -28,10 +32,18 @@ from selenium.webdriver import Remote
 def pytest_addoption(parser):
     """ Parse pytest --option variables from shell """
     parser.addoption('--browser', help='Which test browser?',
+                     choices=['chrome', 'firefox'],
                      default='chrome')
     parser.addoption('--local', help='local or CI?',
                      choices=['true', 'false'],
                      default='true')
+    parser.addoption('--selenium-url',
+                     help='Remote Selenium URL. Overrides --local defaults.',
+                     default=os.getenv('SELENIUM_REMOTE_URL'))
+    parser.addoption('--artifacts-dir',
+                     help='Directory for screenshots and page sources.',
+                     default=os.getenv('TEST_ARTIFACTS_DIR',
+                                       'test-artifacts'))
 
 
 @pytest.fixture(scope='session')
@@ -46,27 +58,66 @@ def local(request):
     return request.config.getoption('--local')
 
 
-@pytest.fixture(scope='function')
-def remote_browser(test_browser, local) -> Remote:
-    """ Select configuration depends on browser and host """
-    if local != 'true' and local != 'false':
-        raise ValueError(f'--local={local}". Driver could not be setup.\n'
-                         'pass "true" if local execute\n'
-                         'pass "false" if use CI service')
+@pytest.fixture(scope='session')
+def selenium_url(request, test_browser, local):
+    """ :returns Selenium Remote URL from option or environment defaults """
+    explicit_url = request.config.getoption('--selenium-url')
+    if explicit_url:
+        return explicit_url
+
     cmd_executor = {
         'true': 'http://localhost:4444/wd/hub',
-        'false': f'http://selenium__standalone-{test_browser}:4444/wd/hub'
+        'false': 'http://selenium:4444/wd/hub'
     }
+    return cmd_executor[local]
+
+
+@pytest.fixture(scope='session')
+def artifacts_dir(request):
+    """ :returns directory for failed test diagnostics """
+    path = Path(request.config.getoption('--artifacts-dir'))
+    path.mkdir(parents=True, exist_ok=True)
+    return path
+
+
+def _slugify(value):
+    return re.sub(r'[^A-Za-z0-9_.-]+', '_', value).strip('_')
+
+
+@pytest.hookimpl(hookwrapper=True)
+def pytest_runtest_makereport(item, call):
+    """ Store test reports on items so fixtures can inspect failures. """
+    outcome = yield
+    report = outcome.get_result()
+    setattr(item, f'rep_{report.when}', report)
+
+
+@pytest.fixture(scope='function')
+def remote_browser(request, test_browser, selenium_url, artifacts_dir) -> Remote:
+    """ Select configuration depends on browser and host """
     if test_browser == 'firefox':
         driver = webdriver.Remote(
             options=webdriver.FirefoxOptions(),
-            command_executor=cmd_executor[local])
+            command_executor=selenium_url)
     elif test_browser == 'chrome':
         driver = webdriver.Remote(
             options=webdriver.ChromeOptions(),
-            command_executor=cmd_executor[local])
+            command_executor=selenium_url)
     else:
         raise ValueError(
             f'--browser="{test_browser}" is not chrome or firefox')
-    yield driver
-    driver.quit()
+    try:
+        yield driver
+        report = getattr(request.node, 'rep_call', None)
+        if report and report.failed:
+            artifact_name = _slugify(request.node.nodeid)
+            screenshot = artifacts_dir / f'{artifact_name}.png'
+            page_source = artifacts_dir / f'{artifact_name}.html'
+            try:
+                driver.save_screenshot(str(screenshot))
+                page_source.write_text(driver.page_source, encoding='utf-8')
+            except Exception as error:
+                request.node.warn(pytest.PytestWarning(
+                    f'Could not save browser diagnostics: {error}'))
+    finally:
+        driver.quit()
