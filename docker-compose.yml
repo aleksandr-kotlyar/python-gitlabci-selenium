@@ -1,0 +1,6 @@
+services:
+  selenium:
+    image: ${SELENIUM_IMAGE:-selenium/standalone-chromium:latest}
+    shm_size: 2gb
+    ports:
+      - "4444:4444"
