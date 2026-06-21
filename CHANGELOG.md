@@ -1,9 +1,15 @@
 # Changelog
 
-## 4.0.0 (to be released on *.07.2020)
- - Add execution in Azure pipelines.
+## Unreleased
+ - Added Selenium service readiness check in GitLab CI.
+ - Added reusable Selenium readiness check script.
+ - Added JUnit report and failed-test diagnostic artifacts in GitLab CI.
+ - Added pytest markers for browser, external, and smoke tests.
+ - Added configurable Selenium Remote URL and artifacts directory.
+ - Removed GitHub traffic badge workflow.
+ - Updated README local and GitLab usage instructions.
 
-## 3.0.0 (to be released on *.06.2020)
+## 3.0.0 (planned, not released)
  - Add execution in GitHub Actions.
 
 ## 2.2.0 (Released 16.05.2020)

@@ -1,41 +1,63 @@
 # Selenium with Docker and GitLab
 
-![GitHub statistics](https://raw.githubusercontent.com/aleksandr-kotlyar/python-gitlabci-selenium/traffic-2021/traffic-python-gitlabci-selenium/in_2021.svg)
-![GitHub views](https://raw.githubusercontent.com/aleksandr-kotlyar/python-gitlabci-selenium/traffic-2021/traffic-python-gitlabci-selenium/views.svg)
-![GitHub views per week](https://raw.githubusercontent.com/aleksandr-kotlyar/python-gitlabci-selenium/traffic-2021/traffic-python-gitlabci-selenium/views_per_week.svg)
-![GitHub clones](https://raw.githubusercontent.com/aleksandr-kotlyar/python-gitlabci-selenium/traffic-2021/traffic-python-gitlabci-selenium/clones.svg)
-![GitHub clones per week](https://raw.githubusercontent.com/aleksandr-kotlyar/python-gitlabci-selenium/traffic-2021/traffic-python-gitlabci-selenium/clones_per_week.svg)
-
 ## About
-Python project template for those who want to quickly start running their Selenium tests in GitLabCI. The template will be helpful enough for the first time if you just starting new test automation project and need a simple CI or even if you are new to GitLab, Docker, Selenium but need to run Selenium tests in CI.
+Python project template for those who want to quickly start running Selenium
+tests in GitLab CI. The template is intentionally small: pytest creates a
+remote browser session, GitLab starts a Selenium service, and failed tests save
+diagnostic artifacts.
+
 #### Browsers support
 - Chrome (default)
 - Firefox
+
 ## GitLab Usage
-- To run job with Chrome just run pipeline with one of the Triggers
-- To run job with Firefox set GitLab variable BROWSER=firefox and run pipeline with one of the Triggers 
+- To run tests with Chrome, run a pipeline with default variables.
+- To run tests with Firefox, set GitLab variable `BROWSER=firefox`.
+
+The pipeline waits for Selenium before starting tests and always publishes:
+- `reports/junit.xml`
+- screenshots for failed tests
+- page sources for failed tests
+
+Selenium readiness is checked by `scripts/wait_for_selenium.py`.
+
 #### CI Triggers
 - **Manual** "Run pipeline" from WebUI
 - **Schedule** to start pipeline by cron
 - **Push** commit to gitlab and pipeline will start automatically
 - **Trigger** API endpoint to start pipeline
+
 ## Local Usage
-Prepare
+Create and activate a Python environment, then install requirements:
 ```shell script
-docker run -d -p 4444:4444 --net grid --name selenium-hub selenium/hub:3.141.59
-docker run -d --net grid -e HUB_HOST=selenium-hub --name chrome -v /dev/shm:/dev/shm selenium/node-chrome
-docker run -d --net grid -e HUB_HOST=selenium-hub --name firefox -v /dev/shm:/dev/shm selenium/node-firefox
+python -m venv .venv
+. .venv/bin/activate
+pip install -r requirements.txt
 ```
-Run tests
+
+Run tests with a local Chrome Selenium service:
 ```shell script
-# tests on Chrome
-pytest
-# or
+docker run -d -p 4444:4444 --name selenium -v /dev/shm:/dev/shm selenium/standalone-chrome
 pytest --browser=chrome
-# tests on Firefox 
-pytest --browser=firefox
+docker stop selenium
+docker rm selenium
 ```
-End of work
+
+Run tests with a local Firefox Selenium service:
 ```shell script
-docker stop selenium-hub chrome firefox
+docker run -d -p 4444:4444 --name selenium -v /dev/shm:/dev/shm selenium/standalone-firefox
+pytest --browser=firefox
+docker stop selenium
+docker rm selenium
+```
+
+Use a custom Selenium Remote URL:
+```shell script
+pytest --browser=chrome --selenium-url=http://localhost:4444/wd/hub
+```
+
+Failed test diagnostics are saved to `test-artifacts/` by default. Override the
+directory with:
+```shell script
+pytest --artifacts-dir=artifacts
 ```
