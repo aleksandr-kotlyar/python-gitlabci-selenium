@@ -37,18 +37,18 @@ pip install -r requirements.txt
 
 Run tests with a local Chrome Selenium service:
 ```shell script
-docker run -d -p 4444:4444 --name selenium -v /dev/shm:/dev/shm selenium/standalone-chrome:latest
+docker compose up -d selenium
+python scripts/wait_for_selenium.py --url http://localhost:4444
 pytest --browser=chrome
-docker stop selenium
-docker rm selenium
+docker compose down
 ```
 
 Run tests with a local Firefox Selenium service:
 ```shell script
-docker run -d -p 4444:4444 --name selenium -v /dev/shm:/dev/shm selenium/standalone-firefox:latest
+SELENIUM_IMAGE=selenium/standalone-firefox:latest docker compose up -d selenium
+python scripts/wait_for_selenium.py --url http://localhost:4444
 pytest --browser=firefox
-docker stop selenium
-docker rm selenium
+docker compose down
 ```
 
 Use a custom Selenium Remote URL:

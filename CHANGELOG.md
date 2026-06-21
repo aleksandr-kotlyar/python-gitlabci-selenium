@@ -3,6 +3,7 @@
 ## Unreleased
  - Added Selenium service readiness check in GitLab CI.
  - Added reusable Selenium readiness check script.
+ - Added Docker Compose setup for local Selenium service.
  - Added JUnit report and failed-test diagnostic artifacts in GitLab CI.
  - Added pytest markers for browser, external, and smoke tests.
  - Added configurable Selenium Remote URL and artifacts directory.
