@@ -6,6 +6,12 @@ tests in GitLab CI. The template is intentionally small: pytest creates a
 remote browser session, GitLab starts a Selenium service, and failed tests save
 diagnostic artifacts.
 
+## Project Links
+- GitLab project and CI pipelines:
+  https://gitlab.com/aleksandr-kotlyar/python-gitlabci-selenium
+- GitHub template mirror:
+  https://github.com/aleksandr-kotlyar/python-gitlabci-selenium
+
 #### Browsers support
 - Chrome (default)
 - Firefox
