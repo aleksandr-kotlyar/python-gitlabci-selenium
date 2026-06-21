@@ -30,14 +30,14 @@ Selenium readiness is checked by `scripts/wait_for_selenium.py`.
 ## Local Usage
 Create and activate a Python environment, then install requirements:
 ```shell script
-python -m venv .venv
+python3.14 -m venv .venv
 . .venv/bin/activate
 pip install -r requirements.txt
 ```
 
 Run tests with a local Chrome Selenium service:
 ```shell script
-docker run -d -p 4444:4444 --name selenium -v /dev/shm:/dev/shm selenium/standalone-chrome
+docker run -d -p 4444:4444 --name selenium -v /dev/shm:/dev/shm selenium/standalone-chrome:latest
 pytest --browser=chrome
 docker stop selenium
 docker rm selenium
@@ -45,7 +45,7 @@ docker rm selenium
 
 Run tests with a local Firefox Selenium service:
 ```shell script
-docker run -d -p 4444:4444 --name selenium -v /dev/shm:/dev/shm selenium/standalone-firefox
+docker run -d -p 4444:4444 --name selenium -v /dev/shm:/dev/shm selenium/standalone-firefox:latest
 pytest --browser=firefox
 docker stop selenium
 docker rm selenium
@@ -53,7 +53,7 @@ docker rm selenium
 
 Use a custom Selenium Remote URL:
 ```shell script
-pytest --browser=chrome --selenium-url=http://localhost:4444/wd/hub
+pytest --browser=chrome --selenium-url=http://localhost:4444
 ```
 
 Failed test diagnostics are saved to `test-artifacts/` by default. Override the

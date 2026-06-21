@@ -22,6 +22,7 @@
 
 import os
 import re
+import warnings
 from pathlib import Path
 
 import pytest
@@ -66,8 +67,8 @@ def selenium_url(request, test_browser, local):
         return explicit_url
 
     cmd_executor = {
-        'true': 'http://localhost:4444/wd/hub',
-        'false': 'http://selenium:4444/wd/hub'
+        'true': 'http://localhost:4444',
+        'false': 'http://selenium:4444'
     }
     return cmd_executor[local]
 
@@ -117,7 +118,9 @@ def remote_browser(request, test_browser, selenium_url, artifacts_dir) -> Remote
                 driver.save_screenshot(str(screenshot))
                 page_source.write_text(driver.page_source, encoding='utf-8')
             except Exception as error:
-                request.node.warn(pytest.PytestWarning(
-                    f'Could not save browser diagnostics: {error}'))
+                warnings.warn(
+                    pytest.PytestWarning(
+                        f'Could not save browser diagnostics: {error}'),
+                    stacklevel=2)
     finally:
         driver.quit()

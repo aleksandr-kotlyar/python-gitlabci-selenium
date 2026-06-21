@@ -53,7 +53,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--url', required=True,
                         help='Remote Selenium URL, for example '
-                             'http://selenium:4444/wd/hub')
+                             'http://selenium:4444')
     parser.add_argument('--timeout', type=int, default=60,
                         help='How many seconds to wait for Selenium.')
     parser.add_argument('--request-timeout', type=int, default=2,
