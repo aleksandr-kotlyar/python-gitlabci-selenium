@@ -22,6 +22,7 @@
 import pytest
 from pytest import raises
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.by import By
 
 
 @pytest.mark.browser
@@ -29,7 +30,7 @@ from selenium.common.exceptions import NoSuchElementException
 @pytest.mark.smoke
 def test_query_window_is_visible(remote_browser):
     remote_browser.get('https://google.com')
-    query_window = remote_browser.find_element_by_name('q')
+    query_window = remote_browser.find_element(By.NAME, 'q')
     assert query_window.is_displayed()
 
 
@@ -38,4 +39,4 @@ def test_query_window_is_visible(remote_browser):
 def test_logo_is_not_visible(remote_browser):
     remote_browser.get('https://yandex.ru')
     with raises(NoSuchElementException):
-        remote_browser.find_element_by_id('lga')
+        remote_browser.find_element(By.ID, 'lga')

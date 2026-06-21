@@ -20,14 +20,16 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-image: python:3.7.6-alpine
+image: python:3.14-alpine
+
 stages:
   - validate
   - test
 
 variables:
   BROWSER: chrome
-  SELENIUM_REMOTE_URL: "http://selenium:4444/wd/hub"
+  FF_NETWORK_PER_BUILD: "1"
+  SELENIUM_REMOTE_URL: "http://selenium:4444"
   TEST_ARTIFACTS_DIR: test-artifacts
 
 .job_template:
@@ -60,7 +62,8 @@ validate:
 e2e:remote:chrome:
   extends: .e2e_template
   services:
-    - name: selenium/standalone-chrome
+    # - name: selenium/standalone-chrome:latest
+    - name: selenium/standalone-chromium:latest
       alias: selenium
   rules:
     - if: '$BROWSER == "chrome"'
@@ -68,7 +71,7 @@ e2e:remote:chrome:
 e2e:remote:firefox:
   extends: .e2e_template
   services:
-    - name: selenium/standalone-firefox
+    - name: selenium/standalone-firefox:latest
       alias: selenium
   rules:
     - if: '$BROWSER == "firefox"'
