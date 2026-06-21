@@ -1,12 +1,14 @@
 # Changelog
 
-## Unreleased
+## 2.3.0 (Released 21.06.2026)
  - Added Selenium service readiness check in GitLab CI.
  - Added reusable Selenium readiness check script.
  - Added Docker Compose setup for local Selenium service.
+ - Added Opera browser support for GitLab CI and local Docker Compose runs.
  - Added JUnit report and failed-test diagnostic artifacts in GitLab CI.
  - Added pytest markers for browser, external, and smoke tests.
  - Added configurable Selenium Remote URL and artifacts directory.
+ - Added Selenium 3 `/wd/hub/status` fallback for Opera readiness checks.
  - Removed GitHub traffic badge workflow.
  - Updated README local and GitLab usage instructions.
 
