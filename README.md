@@ -9,10 +9,12 @@ diagnostic artifacts.
 #### Browsers support
 - Chrome (default)
 - Firefox
+- Opera
 
 ## GitLab Usage
 - To run tests with Chrome, run a pipeline with default variables.
 - To run tests with Firefox, set GitLab variable `BROWSER=firefox`.
+- To run tests with Opera, set GitLab variable `BROWSER=opera`.
 
 The pipeline waits for Selenium before starting tests and always publishes:
 - `reports/junit.xml`
@@ -48,6 +50,14 @@ Run tests with a local Firefox Selenium service:
 SELENIUM_IMAGE=selenium/standalone-firefox:latest docker compose up -d selenium
 python scripts/wait_for_selenium.py --url http://localhost:4444
 pytest --browser=firefox
+docker compose down
+```
+
+Run tests with a local Opera Selenium service:
+```shell script
+docker compose --profile opera up -d selenium-opera
+python scripts/wait_for_selenium.py --url http://localhost:4444
+pytest --browser=opera
 docker compose down
 ```
 

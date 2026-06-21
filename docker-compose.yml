@@ -1,6 +1,15 @@
+x-selenium-service: &selenium-service
+  shm_size: 2gb
+  ports:
+    - "${SELENIUM_PORT:-4444}:4444"
+
 services:
   selenium:
+    <<: *selenium-service
     image: ${SELENIUM_IMAGE:-selenium/standalone-chromium:latest}
-    shm_size: 2gb
-    ports:
-      - "4444:4444"
+
+  selenium-opera:
+    <<: *selenium-service
+    image: selenium/standalone-opera:latest
+    profiles:
+      - opera

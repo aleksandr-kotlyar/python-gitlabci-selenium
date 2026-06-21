@@ -17,6 +17,8 @@ def status_urls(remote_url):
     urls = [f'{root}/status']
     if base_path:
         urls.insert(0, f'{root}{base_path}/status')
+    else:
+        urls.append(f'{root}/wd/hub/status')
     return urls
 
 

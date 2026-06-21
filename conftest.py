@@ -28,12 +28,13 @@ from pathlib import Path
 import pytest
 from selenium import webdriver
 from selenium.webdriver import Remote
+from selenium.webdriver.common.options import ArgOptions
 
 
 def pytest_addoption(parser):
     """ Parse pytest --option variables from shell """
     parser.addoption('--browser', help='Which test browser?',
-                     choices=['chrome', 'firefox'],
+                     choices=['chrome', 'firefox', 'opera'],
                      default='chrome')
     parser.addoption('--local', help='local or CI?',
                      choices=['true', 'false'],
@@ -70,7 +71,10 @@ def selenium_url(request, test_browser, local):
         'true': 'http://localhost:4444',
         'false': 'http://selenium:4444'
     }
-    return cmd_executor[local]
+    remote_url = cmd_executor[local]
+    if test_browser == 'opera':
+        return f'{remote_url}/wd/hub'
+    return remote_url
 
 
 @pytest.fixture(scope='session')
@@ -83,6 +87,13 @@ def artifacts_dir(request):
 
 def _slugify(value):
     return re.sub(r'[^A-Za-z0-9_.-]+', '_', value).strip('_')
+
+
+def _opera_options():
+    """Return capabilities for the legacy Selenium Opera image."""
+    options = ArgOptions()
+    options.set_capability('browserName', 'opera')
+    return options
 
 
 @pytest.hookimpl(hookwrapper=True)
@@ -104,9 +115,13 @@ def remote_browser(request, test_browser, selenium_url, artifacts_dir) -> Remote
         driver = webdriver.Remote(
             options=webdriver.ChromeOptions(),
             command_executor=selenium_url)
+    elif test_browser == 'opera':
+        driver = webdriver.Remote(
+            options=_opera_options(),
+            command_executor=selenium_url)
     else:
         raise ValueError(
-            f'--browser="{test_browser}" is not chrome or firefox')
+            f'--browser="{test_browser}" is not chrome, firefox or opera')
     try:
         yield driver
         report = getattr(request.node, 'rep_call', None)

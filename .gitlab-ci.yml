@@ -75,3 +75,13 @@ e2e:remote:firefox:
       alias: selenium
   rules:
     - if: '$BROWSER == "firefox"'
+
+e2e:remote:opera:
+  extends: .e2e_template
+  variables:
+    SELENIUM_REMOTE_URL: "http://selenium:4444/wd/hub"
+  services:
+    - name: selenium/standalone-opera:latest
+      alias: selenium
+  rules:
+    - if: '$BROWSER == "opera"'
